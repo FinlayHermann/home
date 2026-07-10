@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Website for a Client",
+    "url": "/projects/client-website.html",
+    "date": "06 Juli 2026"
+  },
+  {
+    "title": "Pen-Testing Tool ESP32 Based (in progress)",
+    "url": "/projects/pen-test-tool.html",
+    "date": "06 Juli 2026"
+  },
+  {
+    "title": "IR-Control LED-Light with Microcontroller",
+    "url": "/projects/ir-led-controller.html",
+    "date": "06 Juli 2026"
+  },
+  {
+    "title": "Bluetooth LED Control Server",
+    "url": "/projects/ble-led-controller.html",
+    "date": "05 Juli 2026"
+  },
+  {
+    "title": "Custom ROMing a weak Android Tablet",
+    "url": "/projects/tablet-rom.html",
+    "date": "05 Juli 2026"
+  },
+  {
+    "title": "Screen Repair on an old Phone",
+    "url": "/projects/screen-repair.html",
+    "date": "05 Juli 2026"
+  }
+]
