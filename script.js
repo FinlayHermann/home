@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function loadNotes() {
   const container = document.getElementById("notes-container-full");
 
-  fetch("/notes/content.json")
+  fetch("/home/notes/content.json")
     .then(response => response.json())
     .then(notes => {
       container.innerHTML = "";
@@ -202,7 +202,7 @@ function loadNotes() {
 function loadProjects() {
   const container = document.getElementById("projects-container-full");
 
-  fetch("/projects/content.json")
+  fetch("/home/projects/content.json")
     .then(response => response.json())
     .then(projects => {
       container.innerHTML = "";
@@ -243,23 +243,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const sidebar = document.querySelector(".sidebar");
   
-  // 1. Alle deine Links in der Sidebar auswählen
   const navLinks = sidebar.querySelectorAll(".nav-link");
 
-  // Funktion zum Schließen des Menüs
   const closeMenu = () => {
     sidebar.classList.remove("is-active");
     if (menuToggle) {
       menuToggle.textContent = "☰";
     }
   };
-
-  // 2. Event Listener für den Hamburger-Button
   if (menuToggle) {
     menuToggle.addEventListener("click", () => {
       sidebar.classList.toggle("is-active");
       
-      // Wechselt das Icon zwischen Hamburger und X
       if (sidebar.classList.contains("is-active")) {
         menuToggle.textContent = "✕";
       } else {
@@ -267,8 +262,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-  // 3. JEDEM Link die Anweisung geben, das Menü beim Klick zu schließen
   navLinks.forEach(link => {
     link.addEventListener("click", () => {
       closeMenu();
