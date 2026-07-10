@@ -694,10 +694,27 @@ footer {
   min-height: 100px;
 }
 
+
+@media screen and (max-width: 900px) {
+#introduction {
+  max-width: 90%;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+}
+
 #introduction {
   max-width: 60%;
   line-height: 1.4;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 900px) {
+.left-intro {
+  max-width: 95%;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
 }
 
 .left-intro {
