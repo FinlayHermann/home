@@ -116,7 +116,7 @@ window.addEventListener('popstate', () => {
 function loadNotesMain() {
   const container = document.getElementById("notes-container");
 
-  fetch("/notes/content.json")
+  fetch("/home/notes/content.json")
     .then(response => response.json())
     .then(notes => {
       container.innerHTML = "";
